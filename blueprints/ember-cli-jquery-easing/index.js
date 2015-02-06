@@ -1,9 +1,11 @@
-/* jshint node: true */
-'use strict';
-
 module.exports = {
-  name: 'ember-cli-jquery-easing',
-  included: function (app) {
-    app.import(app.bowerDirectory + "/whirl/dist/whirl.css");
+  normalizeEntityName: function() {
+    // allows us to run ember -g ember-cli-bootstrap and not blow up
+    // because ember cli normally expects the format
+    // ember generate <entitiyName> <blueprint>
+  },
+
+  afterInstall: function () {
+    return this.addBowerPackageToProject('jquery-easing-original', '~1.3.1');
   }
 };
