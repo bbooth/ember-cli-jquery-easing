@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-jquery-easing",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds jquery easing plugin to an ember-cli application",
   "directories": {
     "doc": "doc",
